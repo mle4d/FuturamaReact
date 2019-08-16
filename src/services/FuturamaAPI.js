@@ -1,7 +1,7 @@
 export const getQuotes = (count = 5) => {
-  return fetch(`futuramaapi.herokuapp.com/api/quotes/count=${count}`)
+  return fetch(`https://futuramaapi.herokuapp.com/api/quotes/${count}`)
     .then(res => {
-      if(!res.ok) throw 'I Apologize for nothing!';
+      if(!res.ok) throw 'fuck it';
 
       return res.json();
     })
