@@ -8,8 +8,8 @@ export const getQuotes = (count = 5) => {
     .then(quotes => {
       return quotes.map(quote => ({
         quote: quote.quote,
-        image: quote.PicUrl,
-        name: quote.name
+        image: quote.image,
+        name: quote.character
       }));
     });
 };
