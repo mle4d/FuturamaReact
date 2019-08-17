@@ -34,5 +34,7 @@ export default class Quotes extends Component {
   render() {
     if(this.state.error) return <img src={futuramaerror} />;
     if(this.state.loading) return <img src={futuramaloading} />;
+    return <QuotesFuturama quotes={this.state.quotes} />;
   }
 }
+ 
